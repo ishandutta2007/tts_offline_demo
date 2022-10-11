@@ -1,114 +1,35 @@
-2020). Several ambitious connectomics projects are currently
-underway, such as the IARPA MICrONS program and the
-FlyEM project, a multi-lab, multi-year effort which has produced
-one of the largest and most complete connectomes to date
-(Dorkenwald et al., 2019; Scheffer et al., 2020; Schneider-
-Mizell et al., 2020). However, due to the incredible challenge
-of producing a high-fidelity connectome, only limited volumes
-of the brain have been mapped so far. This demonstrates
-the ongoing challenge of imaging synapses at the nanoscale
-resolution and the need for vast improvements in imaging
-techniques and technology before connectome reconstruction
-reaches its full potential.
-The speed and resource limitations of traditional methods of
-connectome reconstruction have significant drawbacks for the
-usefulness of the connectomes generated. The brain is a highly
-dynamic structure, and although some synapses and spines are
-relatively stable, others frequently reassemble, sometimes on
-the scale of hours (Berry and Nedivi, 2017). A connectome
-merely represents a snapshot of a brain in a moment in time,
-and to truly understand the connectivity of an organism, a
-single connectome will not suffice. Moreover, the connectomes
-of individual organisms may differ greatly and sometimes
-unexpectedly (Bergmann et al., 2020; Witvliet et al., 2020).
-Furthermore, merely knowing the number of synapses that
-connect two neurons does not provide all of the necessary
-information for understanding the function of the synapse. The
-molecular identity of the synapse is incredibly diverse and reveals
-essential information such as synaptic type and strength, without
-which a full vision of connectivity cannot be developed, and
-unfortunately, EM preparation techniques are largely incapable
-of preserving molecular identity (O’Rourke et al., 2012). On the
-other hand, optical microscopy is well suited for imaging large
-samples at high-throughput and compatible with multiplexed
-imaging required for revealing the molecular identity of synapses.
-Indeed, high-throughput optical imaging approaches, such as
-FAST, MOST, and tiling light sheet microscopy, have been
-already used for whole-brain imaging (Gong et al., 2016; Seiriki
-et al., 2017; Motta et al., 2019; Winnubst et al., 2019; Chen
-et al., 2020; Zhong et al., 2021). However, in this case, the
-resolution is limited by the diffraction of light and thus not
-sufficient for mapping synaptic connections. Super-resolution
-microscopy can break the diffraction limit of light but at the
-cost of greatly reduced throughput and the need for thin
-sample slicing to maintain point spread function (Sahl et al.,
-2017; Schermelleh et al., 2019). Expansion Microscopy (ExM),
-a recently developed tissue processing technique, allows for
-the imaging of biological specimens at the voxel rates of a
-diffraction-limited microscope, but with the voxel sizes of a
-super-resolution microscope (Chen F. et al., 2015; Tillberg
-et al., 2016). This makes ExM a form of super-resolution
-microscopy, which relies on swellable polymers to physically
-expand tissues before imaging (Chen F. et al., 2015). Physical
-magnification of the specimen occurs at the nanoscale by
-separating biomolecules, thus enabling subdiffraction limit
-resolution under a conventional microscope (Tillberg et al.,
-2016). Here, the authors would like to note that the first method
-that resulted in brain tissue expansion was reported by Miyawaki
-and colleagues in 2011 (Hama et al., 2011). However, it was
-not realized as a way to improve the spatial resolution of
-imaging until 2015 when Boyden and colleagues introduced the
-concept of ExM.
-ExM has several crucial advantages over EM that make it
-particularly well suited for visualizing the synapse, particularly
-for large-scale projects like connectome mapping. For example,
-the time, labor, equipment, and skill demands of an ExM
-experiment are substantially less than that of an EM experiment
-(Wassie et al., 2019). ExM also is compatible with conventional
-molecular labeling tools and maintains optical microscopy’s
-ability to image in color, allowing for the use of several
-fluorescent probes at once or sequentially, thus enabling
-multiplexing as well as revealing the molecular identity of the
-synapse in situ (Chen F. et al., 2015; Ku et al., 2016; Wassie
-et al., 2019; Alon et al., 2021; Payne et al., 2021). ExM is
-compatible with a wide variety of tissue types and has been
-used to image brain tissue in many of neuroscience’s most
-widely used model organisms (Freifeld et al., 2017; Gao R. et al.,
-2019; Yu et al., 2020) and in monkey specimens (Zhao et al.,
-2017). ExM has already been successfully utilized to image neural
-connectivity at the resolution of the single synapse. For example,
-Gao R. et al. (2019) used ExM in tandem with lattice lightsheet
-microscopy to visualize synaptic proteins and neuronal
-morphology at nanoscale resolution in the mouse cortex and
-Drosophila brain. Shen et al. (2020) also recently used ExM
-combined with fluorescent labeling and antibody staining to
-trace likely synaptic connections in neurons while preserving
-cell-type specific molecular information. There is tremendous
-potential for ExM to revolutionize the way synapses are imaged
-and studied. The technology has produced visually stunning
-results of brain tissue in a variety of model organisms, and
-most ExM protocols are substantially more compatible with the
-high-throughput approach needed to tackle the problems of
-connectomics and beyond in the future.
-We start by reviewing the ExM methods that have
-been already applied for synaptic mapping and imaging
-using immunostaining and fluorescent protein-based neuronal
-labeling and tracing, which facilitates assigning synapses to
-their parent neurons. We also discuss major challenges and
-limitations of the currently available ExM methods regarding the
-comprehensive optical connectome. We then summarize some
-major molecular strategies for visualizing the synapse at high
-resolution that can be used in combination with ExM for optical
-connectome. The first strategy involves fusing synaptic scaffold
-proteins, such as PSD-95, gephyrin, and synaptophysin, with
-fluorescent markers. Many tools are variations of this general
-technique and are widely used both for live imaging and for
-fixed sample preps, and we feature the most commonly used
-and the most promising for ExM below. The second strategy
-involves the use of intrabody-based probes known as FingRs,
-which bind to synaptic scaffold proteins. Although FingRs are
-a much newer and less established technology than tagged
-scaffold proteins, they have several key features that make them
-more suitable for certain applications. We finalize the review by
-providing experimental considerations and perspectives on ExM
-technology.
+ccording to Green and Petre’s cognitive dimensions of
+notations (Green and Petre 1996), the closer the programming world is to the problem world, the easier the problemsolving ought to be. This closeness of mapping is usually
+*To be presented at the AAAI-20 Workshop on Intelligent Process Automation (IPA-20). An earlier version of this paper was
+published and presented at ACM UIST 2019.
+low in conventional and EUD programming languages, as
+they require users to think about their tasks very differently from how they would think about them in familiar
+contexts (Pane, Myers, and others 2001), making programming particularly difficult for end users who are not familiar with programming languages and “computational thinking” (Wing 2006). To address this issue, the concept of natural programming (Myers et al. 2017; Myers, Pane, and Ko
+2004) has been proposed to create techniques and tools that
+match more closely the ways users think.
+Natural language programming is a promising technique
+for bridging the gap between user mental models of tasks
+and programming languages (Mihalcea, Liu, and Lieberman
+2006). It should have a low learning barrier for end users, under the assumption that the majority of end users can already
+communicate procedures and structures for familiar tasks
+through natural language conversations (Lieberman and Liu
+2006; Pane, Myers, and others 2001). Speech is also a natural input modality for users to describe desired program behaviors (Oviatt 1999b). However, existing natural language
+programming systems are not adequate for supporting end
+user task automation in domain-general tasks. Some prior
+systems (e.g., (Price et al. 2000)) directly translate user instructions in natural language into conventional programming languages like Java. This approach requires users to
+use unambiguous language with fixed structures similar to
+those in conventional programming languages. Therefore, it
+does not match the user’s existing mental model of tasks,
+imposing significant learning barriers and high cognitive demands on end users.
+Other natural language programming approaches
+(e.g., (Azaria, Krishnamurthy, and Mitchell 2016;
+Fast et al. 2018; Kate, Wong, and Mooney 2005;
+Srivastava, Labutov, and Mitchell 2017)) restricted the
+problem space to specific task domains, so that they could
+constrain the space and the complexity of target program
+statements in order to enable the understanding of flexible
+user utterances. Such restrictions are due to the limited
+capabilities of existing natural language understanding
+techniques – they do not yet support robust understanding
+of utterances across diverse domains without extensive
+training data and structured prior knowledge within each
